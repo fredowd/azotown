@@ -1,0 +1,33 @@
+:root{
+    --primary-color:#00bfff;
+    --secondary-color:#131819;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    list-style: none;
+}
+
+nav{background: var(--primary-color); color: white}
+nav a{color:white}
+nav a:hover{color:var(--secondary-color)}
+
+section h1{margin:5px 0}
+
+
+/* Une carte de présentation de produit */
+.card{max-width: 200px; max-height: 250px; overflow: hidden; margin-bottom: 5px}
+
+/* REUTILISABLE */
+
+/* Une boite conteneur */
+.box-wrap{
+    display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: stretch;
+}
+
+.add-to-pocket{
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
