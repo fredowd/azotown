@@ -1,0 +1,132 @@
+/* Panier - nav */
+#panier:hover{
+    color: var(--secondary-color)
+}
+
+#panier, #search{
+    color: #0d1524!important
+}
+
+#price{
+    position: absolute;
+    right:0;
+    top: 0;
+}
+
+#cart-content-number{
+    position: absolute;
+    font-size: medium;
+    top: 3px;
+    right: 25px;
+    width: 20px;
+    border: transparent;
+    border-radius: 100%;
+    background: #7b68ee;
+    color: white
+}
+
+.price-label{
+    background: #7b68ee;
+    color: white;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+
+.add-to-pocket{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: var(--primary-color)!important;
+    border: transparent !important;
+}
+
+.add-to-pocket:hover{
+    background: rgba(237, 128, 37, 0.6)!important;
+}
+
+
+/* Image d'illustration dans une carte */
+.illustration-img{
+    width: auto; height:200px; margin: 0; padding: 0;
+}
+
+#banner{background: var(--primary-color) no-repeat;margin:0; padding: 10px;font-size: medium; color: white}
+
+/* FILTERING */
+.filtering{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px #ddd solid
+}
+
+.category_tri{
+    color: #333;
+    width: 200px;
+}
+
+/* Panorama */
+.pano{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    margin: 2rem 0;
+    padding: 20px;
+    grid-gap: 15px;
+}
+
+.pano div{
+    text-align: center
+}
+
+.pano span, .pano i{
+    color: var(--primary-color)!important;
+}
+
+.pano-section{
+    width: 300px;
+    /* background: black */
+}
+
+.pano-section>button{
+    width: 100%
+}
+
+.pano-section>h3{
+    color: #7b68ee
+}
+
+/* Pack */
+.pack{
+    background: #ddd
+}
+
+/* Abonnement formulaire */
+#subscribe_email{background: #ddd; border: transparent; color: var(--secondary-color); border-top-left-radius: 5px; border-bottom-left-radius: 5px; height: 30px;}
+#subscribe_button{background: #13152b; color: var(--primary-color); border: transparent; border-top-right-radius: 5px; border-bottom-right-radius: 5px; height: 30px; width: 25px;}
+
+/*  */
+.seemore{
+    text-transform: capitalize;
+    line-height: 1.9;
+}
+
+/* Column */
+.column-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap : 5px;
+}
+
+/* Styles de textes personnalisés */
+/* italic */
+.i-text{
+    font-style: italic;
+}
+/* priority */
+.p-text{
+    font-weight: bolder;
+    line-height: 1.9;
+    color: #228b22
+}

@@ -1,0 +1,376 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achat - Azotown</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fancybox/dist/jquery.fancybox.css">
+</head>
+<body>
+    <main>
+        <!-- Barre de navigation -->
+        <nav class="navbar">
+            
+            <span class="navbar-brand"><a class="" href="index.html">LOGO</a></span>
+            <ul class="navbar nav">
+                <li class="nav-item"><a class="nav-link" href="index.html"> <i class="fas fa-home"></i>Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="course.html">Faire le marché</a></li>
+                <li class="nav-item"><a class="nav-link accordion" href="">Produits</a></li>
+                <li class="nav-item">
+                    <a id="membership" class="nav-link" href="membership.html"><i class="fas fa-sign-in-alt"></i>Membres</a>
+                </li>
+                <li class="nav-item">
+                    <a id="search" class="btn nav-link" href=""><i class="fab fa-searchengin fa-2x"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a id="panier" class="btn nav-link" href="" alt="Votre panier"><i class="fab fa-opencart fa-2x"></i><span id="cart-content-number">0</span></a></a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <!-- Affichage des produits que le client a ajouté au panier -->
+
+        <!-- <section class="container">
+            <h1 class="container-center">Votre panier</h1>
+            <p class="lead">
+                Voici les derniers produits que vous avez ajouter à votre panier après votre dernière livraison.
+            </p>
+            <article class="row-20"> -->
+                <!-- Liste du panier -->
+                <!-- <div class="box-wrap">
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-arrow-down"></i> Supprimer du panier</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-arrow-down"></i> Supprimer du panier</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-arrow-down"></i> Supprimer du panier</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-backward"></i> Supprimer du panier</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-arrow-down"></i> Supprimer du panier</button>
+                    </div>
+                </div>
+                <div class="container-center">
+                    <a class="seemore" href="#">Voir tous les produits <i class="fas fa-search-plus"></i></a>
+                </div>
+            </article>
+        </section> -->
+
+                
+        <!-- Suggestion des produits -->
+        <section class="container">
+            <article>
+                <h1 class="container-center">Que voulez-vous acheter?</h1>
+                
+                    <!-- Trier les produits par leur fréquence de vente -->
+                    <h2>Nos meilleures ventes</h2>
+                    <div class="box-wrap">
+                        <div class="card">
+                            <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                            <span class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, delectus.
+                            </span>
+                            <img class="illustration-img" src="images/wifi.jpg" alt="">
+                            <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                        </div>
+        
+                        <div class="card">
+                            <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                            <span class="lead">
+                                description 
+                            </span>
+                            <img class="illustration-img" src="images/logos-medias-sociaux-fond-blanc_23-2147841274.jpg" alt="">
+                            <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                        </div>
+        
+                        <div class="card">
+                            <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                            <span class="lead">
+                                description 
+                            </span>
+                            <img class="illustration-img" src="images/wifi.jpg" alt="">
+                            <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                        </div>
+        
+                        <div class="card">
+                            <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                            <span class="lead">
+                                description 
+                            </span>
+                            <img class="illustration-img" src="images/wifi.jpg" alt="">
+                            <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </article>
+            
+            
+        </section>
+
+        <!-- Abonnement pack -->
+        <section class="pack">
+            <h1 class="text-center">Nous avons aussi des paniers garnis</h1>
+            <div class="container-center">
+                <div class="pano">
+                    <div class="pano-section">
+                        <h3>Fruits</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, eum voluptatibus a molestias beatae nihil.</p>
+                        <div>
+                            <img class="illustration-img" src="images/logos-medias-sociaux-fond-blanc_23-2147841274.jpg" alt="">
+                        </div>
+                        <button class="btn btn-success" type="submit">M'abonner</button>
+                    </div>
+
+                    <div class="pano-section">
+                        <h3>Légumes</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, eum voluptatibus a molestias beatae nihil.</p>
+                        <div>
+                            <img class="illustration-img" src="images/logos-medias-sociaux-fond-blanc_23-2147841274.jpg" alt="">
+                        </div>
+                        <button class="btn btn-success" type="submit">M'abonner</button>
+                    </div>
+
+                    <div class="pano-section">
+                        <h3>Fruits et légumes</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, eum voluptatibus a molestias beatae nihil.</p>
+                        <div>
+                            <img class="illustration-img" src="images/logos-medias-sociaux-fond-blanc_23-2147841274.jpg" alt="">
+                        </div>
+                        <button class="btn btn-success" type="submit">M'abonner</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Les produits les plus récentes - Trier par date de publication -->
+        <section class="container">
+            <h1 class="h-auto">Produits disponible</h1>
+            <!-- système de filtrage et de tri des produits -->
+            <aside class="filtering">
+                Filtrer les produits:
+                <span><select class="category_tri" name="category_tri" id="">
+                    <option value="0">A-Z</option>
+                    <option value="1">Date de mise en vente</option>
+                    <option value="2">Fruits</option>
+                    <option value="3">Legumes</option>
+                </select></span>
+
+                <span><select class="category_tri" name="qlt_tri" id="">
+                    <option value="0">-</option>
+                    <option value="1">Les plus vendus</option>
+                    <option value="2">Les plus récents</option>
+                </select></span>
+            </aside>
+            <div class="box-wrap">
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+    
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/logos-medias-sociaux-fond-blanc_23-2147841274.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+    
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+    
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+                </div>
+                <div class="container-center">
+                    <a class="seemore" href="#">Voir tous les produits <i class="fas fa-search-plus"></i></a>
+                </div>
+        </section>
+                    
+                <!-- Inscription -->
+                    <form style="display: none;" id="signup_form" action="post" class="form-group">
+                        <fieldset>
+                            <legend>Pour commencer, inscrivez-vous</legend>
+                            <div class="form-group">
+                                <label for="" class="col-form-label">Prénom</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-form-label">Nom</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-form-label">email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-form-label">téléphone</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-form-label">mot de passe</label>
+                                <input type="password" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-form-label">mot de passe</label>
+                                <input type="password" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-form-label">que voulez vous offrir?</label>
+                                <select class="form-control" name="category" id="category">
+                                    <option value="0" default>Mixte</option>
+                                    <option value="1">Vendre</option>
+                                    <option value="2">Acheter</option>
+                                </select>
+                            </div>
+                            <button type="submit" name="signup" class="btn btn-success">S'inscrire</button>
+                            <button type="reset" class="btn btn-success">Annuler</button>
+                        </fieldset>
+                    </form>
+
+
+                    <!-- Connexion -->
+                <form style="display: none;" id="connect_form" class="form-group" action="" method="post">
+                    
+                    <fieldset>
+                        <legend>Connexion</legend>
+                        <div class="form-group">
+                            <label for="" class="col-form-label">téléphone</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-form-label">mot de passe</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <button type="submit" name="connect" class="btn btn-success">Se connecter</button>
+                        <button type="reset" class="btn btn-success">Annuler</button>
+                        <div class="form-group">
+                            <a data-fancybox data-src="#forgotten_pwd" href="javascript:;">Mot de passe oublié?</a>
+                        </div>
+                    </fieldset>
+                </form>
+                
+                <!-- Mot de passe oublié -->
+                <form id="forgotten_pwd" class="form-group" action="" method="post" style="display: none;">
+                    <label for="">Entrez votre email</label>
+                    <input type="email" name="" id="" class="form-control">
+                    <span></span>
+                    <button type="submit" class="btn btn-success">Confirmer</button>
+                </form>
+        
+        <section id="banner" class="lead">
+                    <div class="container-fluid">
+                        <span>Azotown</span>  est Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem non a porro? Quaerat quas doloribus nobis perspiciatis vel ab quasi at incidunt quisquam, dicta corrupti.
+                    </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-ls">
+                <div class="container-fluid">
+                    <h3 class="">Contactez-nous</h3>
+                    <ul>
+                        <li><i class="fas fa-map-signs fa-2x"></i> <span>123 C 456 Rue invisible</span> </li>
+                        <li><i class="fas fa-phone-square fa-2x"></i> <span>+123456789</span> </li>
+                        <li><i class="fas fa-mail-bulk fa-2x"></i> <span>azotown@gmail.com</span> </li>
+                    </ul>
+                </div>
+    
+                <div class="container-fluid">
+                    <h3 class="">Horaire <i class="fas fa-hourglass"></i></h3>
+                    <ul>
+                        <li>Lundi - Samedi : <span> 123456789</span> </li>
+                        <li>Dimanche : <span> 123456789</span> </li>
+                    </ul>
+                </div>
+    
+                <div class="container-fluid">
+                    <h3 class="">Abonnez-vous à notre newsletter</h3>
+                    <form action="post" class="form-group">
+                        <input type="email" name="subscribe_email" id="subscribe_email" required>
+                        <button type="submit" id="subscribe_button"><i class="fas fa-chevron-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-center">
+                <a href="">Fredo WD </a> 2020<i class="fas fa-copyright"></i> All rights reserved
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-- JS -->
+    <script src="fa/js/all.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="fancybox/dist/jquery.fancybox.js"></script>
+</body>
+</html>

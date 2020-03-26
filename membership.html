@@ -1,0 +1,250 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membre - Azotown</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fancybox/dist/jquery.fancybox.css">
+</head>
+<body>
+    <main>
+        <!-- Barre de navigation -->
+        <nav class="navbar">
+            <span class="navbar-brand"><a class="" href="index.html">LOGO</a></span>
+            <ul class="navbar nav">
+                <li class="nav-item"><a class="nav-link" href="index.html"> <i class="fas fa-home"></i>Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="course.html">Faire le marché</a></li>
+                <li class="nav-item"><a class="nav-link accordion" href="">Produits</a></li>
+                <li class="nav-item">
+                    <a id="membership" class="nav-link" href="membership.html"><i class="fas fa-sign-in-alt"></i>Membres</a>
+                </li>
+                <li class="nav-item">
+                    <a id="search" class="btn nav-link" href=""><i class="fab fa-searchengin fa-2x"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a id="panier" class="btn nav-link" href="" alt="Votre panier"><i class="fab fa-opencart fa-2x"></i><span id="cart-content-number">0</span></a>
+                    
+                </li>
+                
+            </ul>
+        </nav>
+
+        <!-- Section de navigation de l'espace membre -->
+        <!-- Jodika : miseho ity rehefa manana compte activée ilay olona -->
+        <aside class="navbar-sec">
+            <ul class="nav-secondary">
+                <li class="navbar-brand nav-link disabled">Espace membre</li>
+                <li class="nav-sec-item"><a href="#" id="dashboard" class="nav-secondary-link">Tableau de bord</a></li>
+                <li class="nav-sec-item nav-link disabled"><i class="fas fa-chevron-right "></i></li>
+                <li class="nav-sec-item"><a id="products" href="" class="nav-secondary-link disabled">Mes produits</a> </li>
+                <li class="nav-sec-item nav-link disabled"><i class="fas fa-chevron-right "></i></li>
+                <li class="nav-sec-item"><a id="profile" href="" class="nav-secondary-link disabled"> Mon profile</a></li>
+            </ul>
+        </aside>
+
+        <!-- Affiché sy le visiteur n'est pas connecté au session -->
+        <section class="container">
+                <p class="lead col-12">
+                    Société spécialisée dans la production maraichère et la commercialisation des produits agricoles frais <span class="i-text">(légumes et fruits)</span> : Produits 100% frais
+                    <ol class="container-center">
+                        <li class="list-item p-text">Cultivés | transformés au Sénégal</li>
+                        <li class="list-item p-text">Livraisons partout à Dakar</li>
+                        <li class="list-item p-text">Un cycle court de la ferme a la cuisine</li>
+                    </ol>
+                </p>
+
+                <article class="container">
+                    <h1>A propos de nous</h1>
+                    <article>
+                        Nous vous facilitons la vie avec nos services de ventes en ligne. Faites votre course et vos achats chez nous d'où vous voulez <span class="i-text">(à la maison, au travail, à l'école ...)</span> <br>
+                        Nous nous chargeons de vous livrer chez vous ou à un endroit que vous nous indiquez. <br>
+                    </article>
+                    <figure class="container-center">
+                        <img class="" src="images/il.jpg" alt="Femme au restaurant">
+                        <figcaption>
+                            Une femme faisant la course sur son téléphone
+                        </figcaption>
+                    </figure>
+                </article>
+                <!-- <p class="lead">Vous êtes vendeur, acheteur ou bien mixte?</p> -->
+
+                
+        </section>
+
+        <section class="container cont-100" id="togglable-container">
+           <h1>Espace membre <button class="inline-btn" id="toggle_container" type="button"><i class="fas fa-chevron-down"></i></button>  </h1>
+            <article class="lead">
+                Vous êtes déjà memebre? <a id="toggle_container" href="javascript:;">Connectez</a> vous pour pouvoir profiter de tous nos offres. <br>
+                Sinon, <a id="toggle_container" href="javascript:;">inscrivez-vous</a> pour rejoindre notre plateforme.
+            </article>
+
+
+            <!-- Les formulaires -->
+
+            <div class="column-2">
+                <!-- Inscription -->
+                <form id="signup_form" action="post" class="form-group">
+                    <fieldset>
+                        <legend>Pour commencer, inscrivez-vous</legend>
+                        <div class="form-group">
+                            <label for="" class="col-form-label">Prénom</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-form-label">Nom</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-form-label">email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-form-label">téléphone</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-form-label">mot de passe</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-form-label">confirmez votre mot de passe</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-form-label">que voulez vous offrir?</label>
+                            <select class="form-control" name="category" id="category">
+                                <option value="0" default>Mixte</option>
+                                <option value="1">Vendre</option>
+                                <option value="2">Acheter</option>
+                            </select>
+                        </div>
+                        <button type="submit" name="signup" class="btn btn-success">S'inscrire</button>
+                        <button type="reset" class="btn btn-success">Annuler</button>
+                    </fieldset>
+                </form>
+
+                <!-- Connexion -->
+                <form id="connect_form" class="form-group" action="" method="post">
+                    
+                    <fieldset>
+                        <legend>Connexion</legend>
+                        <div class="form-group">
+                            <label for="" class="col-form-label">téléphone</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-form-label">mot de passe</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <button type="submit" name="connect" class="btn btn-success">Se connecter</button>
+                        <button type="reset" class="btn btn-success">Annuler</button>
+                        <div class="form-group">
+                            <a data-fancybox data-src="#forgotten_pwd" href="javascript:;">Mot de passe oublié?</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            
+        </section>
+        
+                    
+        <!-- Si le visiteur est connecté au session -->
+        <section class="container">
+            
+        </section>
+
+
+                    
+                
+                <!-- Mot de passe oublié -->
+                <form id="forgotten_pwd" class="form-group" action="" method="post" style="display: none;">
+                    <label for="">Entrez votre email</label>
+                    <input type="email" name="" id="" class="form-control">
+                    <span></span>
+                    <button type="submit" class="btn btn-success">Confirmer</button>
+                </form>
+        
+        <section id="banner" class="lead">
+                    <div class="container-fluid">
+                        <span>Azotown</span>  est Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem non a porro? Quaerat quas doloribus nobis perspiciatis vel ab quasi at incidunt quisquam, dicta corrupti.
+                    </div>
+                    
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-ls">
+                <div class="container-fluid">
+                    <h3 class="">Contactez-nous</h3>
+                    <ul>
+                        <li><i class="fas fa-map-signs fa-2x"></i> <span>123 C 456 Rue invisible</span> </li>
+                        <li><i class="fas fa-phone-square fa-2x"></i> <span>+123456789</span> </li>
+                        <li><i class="fas fa-mail-bulk fa-2x"></i> <span>azotown@gmail.com</span> </li>
+                    </ul>
+                </div>
+    
+                <div class="container-fluid">
+                    <h3 class="">Horaire <i class="fas fa-hourglass"></i></h3>
+                    <ul>
+                        <li>Lundi - Samedi : <span> 123456789</span> </li>
+                        <li>Dimanche : <span> 123456789</span> </li>
+                    </ul>
+                </div>
+    
+                <div class="container-fluid">
+                    <h3 class="">Abonnez-vous à notre newsletter</h3>
+                    <form action="post" class="form-group">
+                        <input type="email" name="subscribe_email" id="subscribe_email" required>
+                        <button type="submit" id="subscribe_button"><i class="fas fa-chevron-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-center">
+                <a href="">Fredo WD </a> 2020<i class="fas fa-copyright"></i> All rights reserved
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="fa/js/all.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="fancybox/dist/jquery.fancybox.js"></script>
+    <script>
+        // const is_connected = true;
+
+        // const dashboard = document.querySelector('a').getElementById('dashboard');
+        // const products = document.querySelector('a').getElementById('products');
+        // const profile = document.getElementById('profile');
+
+        // let em_section;
+        // window.onload(function(){
+        //     em_section = dashboard;
+
+        //     // Verification du section de l'espace membre requis par l'user
+        //     if(is_connected){
+        //         dashboard.addEventListener('click', function(){
+        //             dashboard.classList.add('disabled');
+        //         });
+
+        //         switch(em_section){
+        //             case dashboard:
+        //                 // desactiver les 2 autre menu-items
+        //                 products.classList.toggle('disabled');
+        //                 profile.classList.toggle('disabled');
+
+
+        //         }
+                    
+
+
+        // }});
+    </script>
+</body>
+</html>
