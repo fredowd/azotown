@@ -71,7 +71,10 @@ nav a:hover{
 .item-group-inline{
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    /* position: absolute;
+    top: 5px;
+    right: 0px */
 }
 
 /* secondary navigation */
@@ -203,7 +206,7 @@ section h1{
     }
 
     /* Navigation */
-    .navbar>#navlist{
+    /* .navbar>#navlist{
         display: block;
         flex-direction: row;
         position: absolute;
@@ -221,6 +224,11 @@ section h1{
     
     .navbar>#navlist.show, .show{
         transform: translateX(-20px);
+    } */
+    .navbar-toggler{
+        position: absolute;
+        top: 5px;
+        left: 100px
     }
 
     .introduction{
