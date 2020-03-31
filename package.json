@@ -1,0 +1,41 @@
+{
+  "name": "azotown",
+  "version": "1.0.0",
+  "description": "site ecommerce de vente de produits locaux",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.9.6",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "parseurl": "^1.3.3",
+    "serve-favicon": "^2.5.0",
+    "sriracha": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredowd/azotown.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "node",
+    "js",
+    "express"
+  ],
+  "author": "fredowd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredowd/azotown/issues"
+  },
+  "homepage": "https://github.com/fredowd/azotown#readme"
+}

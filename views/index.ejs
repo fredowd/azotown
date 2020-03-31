@@ -1,0 +1,304 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Accueil </title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="fa/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fancybox/dist/jquery.fancybox.css">
+</head>
+<body>
+    <main>
+        <nav id="navbar" class="navbar navbar-expand-lg">
+            
+            
+            <span class="navbar-brand"><a class="" href="/">LOGO</a></span>
+
+            <!-- bootstrap navbar btn toggler -->
+            <button class="navbar-toggler btn nav-link" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars fa-2x"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/"> <i class="fas fa-home"></i>Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/course"> <i class="fas fa-caret-right"></i> Faire le marché</a></li>
+                    <li class="nav-item"><a class="nav-link accordion" href="">Produits</a></li>
+                    <!-- <li class="nav-item">
+                        <a id="membership" class="nav-link" href="membership.html"><i class="fas fa-sign-in-alt"></i>Membres</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-sign-in-alt"></i>Membres
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="nav-link dropdown-item" href="/login">Se connecter</a>
+                          <a class="nav-link dropdown-item" href="/signup">S'inscrire</a>
+                        </div>
+                      </li>
+                </ul>
+            </div>    
+            
+            <span class="nav-item">
+                <div class="item-group-inline">
+                    <a id="search" class="btn nav-link" href=""><i class="fab fa-searchengin fa-2x"></i></a>
+                <a id="panier" class="btn nav-link" href="" alt="Votre panier"><i class="fab fa-opencart fa-2x"></i><span id="cart-content-number">0</span></a></a>
+                </div>
+                
+                
+            </span>
+        </nav>
+
+        <!-- bouton de redirection vers le  menu -->
+        
+        <a id="redirect-menu" href="#navbar">
+            <i class="fas fa-chevron-up fa-2x"></i>
+        </a>
+        
+        <!-- message de bienvenue -->
+        <% if(loggedin){ %>
+            <div class="container-center alert-success">
+                Bienvenu(e), veuillez vérifier votre email: <%- email %>
+            </div>
+        <% } %>
+
+        <!-- message de bienvenue -->
+        <% if(auth){ %>
+            <div class="container-center alert-success">
+                Comment allez-vous? Re-bienvenue!
+            </div>
+        <% } %>
+
+        <!-- EN tête et overlay -->
+        <section class="introduction dark">
+            <div class="content">
+                <h2>Faites votre course en ligne</h2>
+                <p>
+                    Facilitez-vous la vie avec nous. Faites vos courses en ligne et nous nous chargeons de vous les livrer.
+                </p>
+                <a href="course.html" class="btn btn-outline-light">Visiter la boutique<i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+
+        <section class="howitwork container">
+            <h1 class="container-center">Comment nous procédons?</h1>
+            <div class="pano">
+                    <div>
+                       <span>  <i class="fas fa-leaf fa-2x"></i></span>
+                        <p>
+                            Les produits en ventes sont listés et catégorisés pour faciliter votre achat.
+                        </p>
+                    </div>
+                    <div>
+                        <span> <i class="fas fa-cart-plus fa-2x"></i></span>
+                         <p>
+                             Vous faites votre course et effectuant la commande que vous avez besoin.
+                         </p>
+                     </div>
+                     <div>
+                        <span>  <i class="fas fa-address-card fa-2x"></i></span>
+                         <p>
+                             Votre commande sera traitée dans un délai fixé
+                         </p>
+                     </div>
+                     <div>
+                        <span>  <i class="fas fa-truck-moving fa-2x"></i></span>
+                         <p>
+                             Vous serez livré dans le délai convenu
+                         </p>
+                     </div>
+            </div>
+        </section>
+
+         <!-- Abonnement pack -->
+         <section class="pack">
+            <h1 class="text-center">Nous avons aussi des paniers garnis</h1>
+            <div class="container-center">
+                <div class="pano">
+                    <div class="pano-section">
+                        <h3>Fruits</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, eum voluptatibus a molestias beatae nihil.</p>
+                        <div>
+                            <img class="illustration-img" src="images/logos-medias-sociaux-fond-blanc_23-2147841274.jpg" alt="">
+                        </div>
+                        <button class="btn btn-success" type="submit">M'abonner</button>
+                    </div>
+
+                    <div class="pano-section">
+                        <h3>Légumes</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, eum voluptatibus a molestias beatae nihil.</p>
+                        <div>
+                            <img class="illustration-img" src="images/logos-medias-sociaux-fond-blanc_23-2147841274.jpg" alt="">
+                        </div>
+                        <button class="btn btn-success" type="submit">M'abonner</button>
+                    </div>
+
+                    <div class="pano-section">
+                        <h3>Fruits et légumes</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, eum voluptatibus a molestias beatae nihil.</p>
+                        <div>
+                            <img class="illustration-img" src="images/logos-medias-sociaux-fond-blanc_23-2147841274.jpg" alt="">
+                        </div>
+                        <button class="btn btn-success" type="submit">M'abonner</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COrps principale de la page -->
+        <section class="container">
+            <!-- Trier par la fréquence d'achat des produits -->
+            <h1 class="h-auto">Nos produits les plus achetés</h1>
+            <div class="box-wrap">
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+    
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/logos-medias-sociaux-fond-blanc_23-2147841274.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+    
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+    
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+                </div>
+                <div class="container-center">
+                    <a class="seemore" href="#">Voir tous les produits <i class="fas fa-search-plus"></i></a>
+                </div>
+        </section>
+
+        <!-- Les produits les plus récentes - Trier par date de publication -->
+        <section class="container">
+            <h1 class="h-auto">Nos produits les plus récents</h1>
+            <div class="box-wrap">
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+    
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/logos-medias-sociaux-fond-blanc_23-2147841274.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+    
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+    
+                    <div class="card">
+                        <h3>Produits</h3>
+                            <span id="price" class="price-label">000<i class="fas fa-euro-sign"></i></span>
+                        <span class="lead">
+                            description 
+                        </span>
+                        <img class="illustration-img" src="images/wifi.jpg" alt="">
+                        <button class="btn btn-secondary add-to-pocket"><i class="fas fa-cart-plus"></i> Ajouter au panier</button>
+                    </div>
+                </div>
+                <div class="container-center">
+                    <a class="seemore" href="#">Voir tous les produits <i class="fas fa-search-plus"></i></a>
+                </div>
+        </section>
+
+        <section id="banner" class="lead">
+            <div class="container-fluid">
+                <span>Azotown</span>  est Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem non a porro? Quaerat quas doloribus nobis perspiciatis vel ab quasi at incidunt quisquam, dicta corrupti.
+            </div>
+            
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-ls">
+                <div class="container-fluid">
+                    <h3 class="">Contactez-nous</h3>
+                    <ul>
+                        <li><i class="fas fa-map-signs fa-2x"></i> <span>123 C 456 Rue invisible</span> </li>
+                        <li><i class="fas fa-phone-square fa-2x"></i> <span>+123456789</span> </li>
+                        <li><i class="fas fa-mail-bulk fa-2x"></i> <span>azotown@gmail.com</span> </li>
+                    </ul>
+                </div>
+    
+                <div class="container-fluid">
+                    <h3 class="">Horaire <i class="fas fa-hourglass"></i></h3>
+                    <ul>
+                        <li>Lundi - Samedi : <span> 123456789</span> </li>
+                        <li>Dimanche : <span> 123456789</span> </li>
+                    </ul>
+                </div>
+    
+                <div class="container-fluid">
+                    <h3 class="">Abonnez-vous à notre newsletter</h3>
+                    <form action="post" class="form-group">
+                        <input type="email" name="subscribe_email" id="subscribe_email" required>
+                        <button type="submit" id="subscribe_button"><i class="fas fa-chevron-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-center">
+                <a href="">Fredo WD </a> 2020<i class="fas fa-copyright"></i> All rights reserved
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="fa/js/all.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="fancybox/dist/jquery.fancybox.js"></script>
+    <script>
+    </script>
+</body>
+</html>
